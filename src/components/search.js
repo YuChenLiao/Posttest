@@ -3,7 +3,9 @@ import style from './search.css';
 
 const SearchInput = () => {
   return (
-    <div className={style.header}></div>
+    <div className={style.header}>
+      搜索框区域
+    </div>
   )
 }
 
