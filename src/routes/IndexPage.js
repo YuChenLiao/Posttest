@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
 import SearchInput from '../components/search';
