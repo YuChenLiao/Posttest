@@ -2,7 +2,7 @@ import React from "react";
 
 const Personal = () => {
   return (
-    <div></div>
+    <div>个人主页</div>
   )
 }
 

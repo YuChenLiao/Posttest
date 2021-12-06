@@ -14,9 +14,9 @@ function IndexPage() {
 
   return (
     <div className={styles.back}>
-      <HeadTab></HeadTab>
+      <HeadTab changePage={changePage}></HeadTab>
       <SearchInput></SearchInput>
-      <MainPage page={page} changePage={changePage}></MainPage>
+      <MainPage page={page}></MainPage>
     </div>
   );
 }

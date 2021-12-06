@@ -2,7 +2,7 @@ import React from "react";
 
 const MessagePage = () => {
   return (
-    <div></div>
+    <div>这是信息页</div>
   )
 }
 
