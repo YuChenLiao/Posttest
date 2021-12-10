@@ -1,7 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Personal = () => {
   const [isManager, setManager] = useState(false);
+  
+  useEffect(() => {
+    if (isManager) 
+      showManager();
+    return () => {}
+  },[])
+
+  const showManager = () => {
+    setManager(true);
+  }
 
   const ShopManager = () => {
     return(

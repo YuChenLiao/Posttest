@@ -6,23 +6,23 @@ import ShoppingCart from './pages/shoppingCart';
 import style from './mainPages.css';
 
 const MainPage = (any) => {
-  console.log(any);
 
-  const page = {any}
+  const {page} = any
+
+  const ShowPage = () => {
+    console.log(page)
+    switch(page) {
+      case '1': return <FirstPage/>;
+      case '2': return <MessagePage/>;
+      case '3': return <ShoppingCart/>;
+      case '4': return <Personal/>;
+      default: return;
+    }
+  }
 
   return (
     <div className={style.main}>
-      {
-        () => {
-          switch(page) {
-            case '1': return <FirstPage/>;
-            case '2': return <MessagePage/>;
-            case '3': return <ShoppingCart/>;
-            case '4': return <Personal/>;
-            default: return;
-          }
-        }
-      }
+      <ShowPage/>
     </div>
   )
 }
