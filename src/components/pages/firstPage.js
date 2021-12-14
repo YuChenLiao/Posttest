@@ -13,8 +13,6 @@ const FirstPage = () => {
   const [img, setImg] = useState([])
   const [loaded, setloaded] = useState('none')
   const [dataPage, setdataPage] = useState(0)
-  const [show, setshow] = useState('none')
-  const [showload, setshowload] = useState('block')
 
   useEffect(() => {
     loadImg()
@@ -26,8 +24,6 @@ const FirstPage = () => {
     elLoad.on('always', () => {
       // 调用瀑布流
       waterFall()
-      setshow('block')
-      setshowload('none')
     })
   }
 
@@ -126,7 +122,6 @@ const FirstPage = () => {
             <div 
               className={style.waterBox} 
               key={index}
-              style={{display: show}}
             >
               <img src={item} alt={index}></img>
             </div>
@@ -134,7 +129,11 @@ const FirstPage = () => {
         )
       )
     } else
-      return null
+      return (
+        <div className={style.wloading}>
+          <Spin size="large"></Spin>
+        </div>
+      )
   }
 
   return (
@@ -149,9 +148,6 @@ const FirstPage = () => {
         >
           <div className={style.fbox}>
             <Wimg></Wimg>
-          </div>
-          <div className={style.wloading} style={{diplay:show}}>
-            <Spin size="large"></Spin>
           </div>
         </InfiniteScroll>
       </div>
