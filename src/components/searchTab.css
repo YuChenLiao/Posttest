@@ -13,6 +13,7 @@
   line-height: .5rem;
   box-sizing: border-box;
   padding-bottom: .1rem;
+  padding-top: .05rem;
 }
 
 .test input {
@@ -20,8 +21,9 @@
   border-bottom: 1px solid gray;
   width: 100%;
   height: .4rem;
-  line-height: .3rem;
-  padding: 5px;
+  padding: 10px;
   box-sizing: border-box;
   outline: medium;
+  vertical-align: top;
+  font-size: .2rem;
 }
