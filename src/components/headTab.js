@@ -10,9 +10,8 @@ const HeadTab = (any) => {
   }
 
   return (
-    <div className={style.tab}>
-      导航栏区域
-      <button onClick={change}></button>
+    <div className={style.htab}>
+      <div className={style.test}></div>
     </div>
   )
 }

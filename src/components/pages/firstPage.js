@@ -5,6 +5,7 @@ import InfiniteScroll from 'react-infinite-scroller'
 import axios from 'axios'
 import { Spin } from 'antd'
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
+import 'antd/dist/antd.css';
 import style from "./firstPage.css"
 
 const FirstPage = () => {
@@ -94,8 +95,10 @@ const FirstPage = () => {
   }
 
   const changeData = (choose) => {
-    if(!choose && dataPage > 0)
+    if(!choose && dataPage > 0){
       setdataPage(dataPage-1)
+      imagesOnload()
+    }
     else if(!choose && dataPage === 0)
       alert("已经在第一页了！")
     else {
@@ -117,7 +120,7 @@ const FirstPage = () => {
       )
     } else
       return (
-        <div className={style.loading}>
+        <div className={style.wloading}>
           <Spin size="large"></Spin>
         </div>
       )
@@ -140,6 +143,7 @@ const FirstPage = () => {
       </div>
       <div className={style.pageTab} style={{display: loaded}}>
         <span onClick={() => changeData(0)}><LeftOutlined></LeftOutlined></span>
+        <span>{dataPage+1}</span>
         <span onClick={() => changeData(1)}><RightOutlined></RightOutlined></span>
       </div>
     </div>
