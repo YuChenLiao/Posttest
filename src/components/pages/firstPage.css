@@ -1,14 +1,15 @@
 .content {
   width: 100%;
   min-height: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
   box-sizing: border-box;
 }
 
 .mainBlock {
   min-height: 100%;
   background-color: azure;
+  padding-top: .05rem;
 }
 
 .fbox {
@@ -17,7 +18,7 @@
 }
 
 .waterBox {
-  width: 20%;
+  width: 18%;
   margin-bottom: 10px;
   overflow: hidden;
   border-radius: 5px;
@@ -28,4 +29,25 @@
   vertical-align: top;
   width: 100%;
   height: 100%;
+}
+
+.pageTab {
+  bottom: 0%;
+  height: .4rem;
+  font-size: .2rem;
+  text-align: center;
+}
+
+.pageTab span {
+  margin-left: .2rem;
+  margin-right: .2rem;
+  line-height: .4rem;
+}
+
+.loading {
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 2rem;
 }
