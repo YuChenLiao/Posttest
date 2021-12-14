@@ -1,17 +1,9 @@
 import React from 'react';
-import style from './headTab.css'
+import style from './headTab.css';
 
-const HeadTab = (any) => {
-
-  const { changePage } = any;
-
-  const change = (value) => {
-    changePage(value);
-  }
-
+const HeadTab = () => {
   return (
-    <div className={style.htab}>
-      <div className={style.test}></div>
+    <div className={style.sheader}>
     </div>
   )
 }
