@@ -6,10 +6,13 @@ const HeadTab = (any) => {
   return (
     <div className={style.sheader}>
       <div className={style.tabContent}>
-        <span onClick={() => changePage('1')}>1</span>
-        <span onClick={() => changePage('2')}>2</span>
-        <span onClick={() => changePage('3')}>3</span>
-        <span className={style.tRight} onClick={() => changePage('4')}>4</span>
+        <span onClick={() => changePage('1')}>首页</span>
+        <span onClick={() => changePage('2')}>信息</span>
+        <span onClick={() => changePage('3')}>购物车</span>
+        <span 
+          className={style.tRight} 
+          onClick={() => changePage('4')}
+        >个人空间</span>
       </div>
     </div>
   )

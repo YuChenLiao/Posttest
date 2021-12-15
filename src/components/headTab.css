@@ -17,8 +17,8 @@
 
 .tabContent span {
   height: .4rem;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   box-sizing: border-box;
   border-left: silver 1px solid;
 }
