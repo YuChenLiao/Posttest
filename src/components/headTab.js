@@ -1,14 +1,15 @@
 import React from 'react';
 import style from './headTab.css';
 
-const HeadTab = () => {
+const HeadTab = (any) => {
+  const {changePage} = any;
   return (
     <div className={style.sheader}>
       <div className={style.tabContent}>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span className={style.tRight}>4</span>
+        <span onClick={() => changePage('1')}>1</span>
+        <span onClick={() => changePage('2')}>2</span>
+        <span onClick={() => changePage('3')}>3</span>
+        <span className={style.tRight} onClick={() => changePage('4')}>4</span>
       </div>
     </div>
   )

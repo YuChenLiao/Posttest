@@ -9,13 +9,14 @@ function IndexPage() {
   const [page, setPage] = useState('1');
   
   const changePage = (value) => {
+    console.log(value)
     setPage(value);
   }
 
   return (
     <div className={styles.back}>
-      <SearchTab changePage={changePage}></SearchTab>
-      <HeadTab></HeadTab>
+      <SearchTab></SearchTab>
+      <HeadTab changePage={changePage}></HeadTab>
       <MainPage page={page}></MainPage>
     </div>
   );
