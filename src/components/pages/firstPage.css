@@ -8,7 +8,6 @@
 
 .mainBlock {
   min-height: 100%;
-  background-color: azure;
   padding-top: .05rem;
 }
 
@@ -48,4 +47,15 @@
   width: 100%;
   height: 10rem;
   text-align: center;
+}
+
+.mask {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mask img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
 }

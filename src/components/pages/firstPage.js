@@ -3,7 +3,7 @@ import Masonry from 'masonry-layout'
 import imagesloaded  from 'imagesloaded'
 import InfiniteScroll from 'react-infinite-scroller'
 import axios from 'axios'
-import { Spin } from 'antd'
+import { Spin, Modal } from 'antd'
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 import 'antd/dist/antd.css';
 import style from "./firstPage.css"
@@ -115,6 +115,22 @@ const FirstPage = () => {
     }
   }
 
+  const clickItem = (item,index) => {
+    Modal.confirm({
+      title: '商品详情',
+      cancelText: '取消',
+      okText: '加入购物车',
+      closable: true,
+      centered: true,
+      maskClosable: true,
+      content: (
+        <div className={style.mask}>
+          <img src={item} alt={index}></img>
+        </div>
+      )
+    })
+  }
+
   const Wimg = () => {
     if(img[dataPage]) {
       return (
@@ -122,6 +138,7 @@ const FirstPage = () => {
             <div 
               className={style.waterBox} 
               key={index}
+              onClick={() => clickItem(item,index)}
             >
               <img src={item} alt={index}></img>
             </div>
