@@ -1,0 +1,12 @@
+.mBox {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: .15rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.mContent {
+  width: 100%;
+  background-color: #fff;
+}
