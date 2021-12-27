@@ -1,0 +1,63 @@
+.content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: .3rem;
+}
+
+.avatar {
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: gray 0 0 10px;
+  text-align: left;
+  line-height: 2rem;
+  box-sizing: border-box;
+  padding-left: .2rem;
+  font-size: .4rem;
+}
+
+.avatar:hover {
+  box-shadow: black 0 0 20px;
+}
+
+.avatar span {
+  height: 2rem;
+  line-height: 2rem;
+  box-sizing: border-box;
+  padding-left: .2rem;
+}
+
+.apply {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: gray 0 0 10px;
+  margin-top: .5rem;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.apply div {
+  border-top: gray 1px solid;
+  height: .8rem;
+  line-height: .8rem;
+  text-align: left;
+  font-size: .3rem;
+  font-weight: lighter;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.apply div:hover {
+  box-shadow: black 0 0 5px;
+}
+
+.login {
+  width: 100%;
+  height: 1rem;
+}
