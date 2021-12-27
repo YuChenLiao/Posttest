@@ -63,7 +63,6 @@ const FirstPage = () => {
         'https://api.thecatapi.com/v1/images/search', 
         { params: { limit: 20, size: 'full' } }
       );
-      console.log(res.data)
       const temp = res.data;
       for(let i = 0;i < temp.length;i++){
         const pic = temp[i].url
@@ -85,7 +84,6 @@ const FirstPage = () => {
 
   const waterFall = () => {
     var block = document.querySelector('.'+style.fbox)
-    console.log(block)
     new Masonry(block,{
       itemSelector: '.'+style.waterBox, //要布局的网格元素
       columnWidth: '.'+style.waterBox, //自适应
@@ -105,7 +103,6 @@ const FirstPage = () => {
       setloaded('none')
       setdataPage(dataPage+1)
       if(!img[dataPage]){
-        console.log(dataPage)
         loadMoreImg()
       }
       else {

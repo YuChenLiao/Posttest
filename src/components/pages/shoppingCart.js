@@ -12,6 +12,18 @@ const ShoppingCart = () => {
         <List
           bordered
           dataSource={data}
+          header={<div>未送达</div>}
+          renderItem={item => (
+            <List.Item>
+              {item}
+            </List.Item>
+          )}
+        />
+        <br></br>
+        <List
+          bordered
+          dataSource={data}
+          header={<div>已送达</div>}
           renderItem={item => (
             <List.Item>
               {item}
