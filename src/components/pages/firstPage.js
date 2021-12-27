@@ -123,9 +123,11 @@ const FirstPage = () => {
       closable: true,
       centered: true,
       maskClosable: true,
+      onOk: () => alert("后端出现问题，无法登录"),
       content: (
         <div className={style.mask}>
           <img src={item} alt={index}></img>
+          <div>猫猫:10元</div>
         </div>
       )
     })

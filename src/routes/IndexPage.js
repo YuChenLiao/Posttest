@@ -6,7 +6,7 @@ import SearchTab from '../components/searchTab';
 import MainPage from '../components/mainPages';
 
 function IndexPage() {
-  const [page, setPage] = useState('2');
+  const [page, setPage] = useState('4');
   
   const changePage = (value) => {
     console.log(value)

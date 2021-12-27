@@ -1,8 +1,10 @@
 .sheader {
   width: 100%;
   height: .5rem;
-  background-color: rgb(192, 192, 192);
+  background-color: #66ccff;
+  color: #ffffff;
   font-size: .5rem;
+  box-shadow:gray 0 0 10px ;
 }
 
 .tabContent {
@@ -20,13 +22,15 @@
   padding-left: 5%;
   padding-right: 5%;
   box-sizing: border-box;
-  border-left: silver 1px solid;
+  border-left: #ffffff 1px solid;
 }
 
 .tabContent span:hover {
   background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: #1890FF 2px solid;
+  color: #1890FF;
 }
 
 .tabContent .tRight {
-  border-right: silver 1px solid;
+  border-right: #ffffff 1px solid;
 }

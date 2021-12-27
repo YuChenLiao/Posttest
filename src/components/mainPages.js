@@ -7,7 +7,7 @@ import style from './mainPages.css';
 
 const MainPage = (any) => {
 
-  const {page} = any
+  const {page} = any;
 
   const ShowPage = () => {
     console.log(page)

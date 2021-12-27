@@ -3,14 +3,7 @@ import { List } from 'antd'
 import 'antd/dist/antd.css';
 import style from "./message.css"
 
-const data = [
-  '消息1',
-  '消息2',
-  '消息3',
-  '消息4',
-  '消息5',
-  '消息6'
-]
+const data = []
 
 const MessagePage = () => {
   return (
