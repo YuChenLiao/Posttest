@@ -4,6 +4,10 @@
 
 [https://github.com/YuChenLiao/Posttest](https://github.com/YuChenLiao/Posttest)
 
+## 测试链接
+
+<http://101.37.80.152/#/>
+
 ## 技术栈
 
 [react](https://react.docschina.org/tutorial/tutorial.html) + [dva](https://dvajs.com/) + [antd](https://ant.design/docs/react/getting-started-cn)
